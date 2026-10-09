@@ -22,6 +22,15 @@ public class DigitSum {
      */
     public static int digitSum(int n) {
         // TODO: complete
-        return 0;
+        int copy = n;
+        int sum = 0;
+        if (n < 0)
+            copy = -n;
+
+        while (copy != 0){
+            sum += (copy % 10);
+            copy = copy / 10;
+        }
+        return sum;
     }
 }
