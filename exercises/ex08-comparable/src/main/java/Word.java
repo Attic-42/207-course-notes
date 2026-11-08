@@ -40,6 +40,6 @@ public class Word implements Comparable<Word> {
     //       already negative / zero / positive in the right cases.
     int x = other.getText().length();
     int y = this.text.length();
-    return x - y;
+    return y - x;
   }
 }
