@@ -195,7 +195,7 @@ public class NumberTriangle {
       //       this row; make a NumberTriangle for each one, then wire this row up
       //       as the children of the previous row. Remember the aliasing: the
       //       right child of one node is the left child of the next node over.
-      String[] numbers = line.trim().split("\s+");
+      String[] numbers = line.trim().split(" ");
 
       NumberTriangle[] currentRow = new NumberTriangle[numbers.length];
 
